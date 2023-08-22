@@ -1,0 +1,568 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "49ee5c53",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "#1. Write a program that prints all the numbers from 0 to 6 except 3 and 6\n",
+    "\n",
+    "x=[0,1,2,3,4,5,6]\n",
+    "i=0\n",
+    "for y in x:\n",
+    "    if y/3!=0:\n",
+    "        print(y)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "abce63a4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter any number: 4\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "#2.Write a program to accept a number from a user and chalculate the sum of all numbers from 1 to a given number\n",
+    "\n",
+    "n=int(input(\"enter any number: \"))\n",
+    "for y in range(1,n+1):\n",
+    "    print(y)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "715fb932",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n",
+      "5*1=5\n",
+      "5*2=10\n",
+      "5*3=15\n",
+      "5*4=20\n",
+      "5*5=25\n",
+      "5*6=30\n",
+      "5*7=35\n",
+      "5*8=40\n",
+      "5*9=45\n",
+      "5*10=50\n"
+     ]
+    }
+   ],
+   "source": [
+    "#3.Write a program to print multiplication table of a given number\n",
+    "\n",
+    "num=int(input())\n",
+    "x=1\n",
+    "while x<=10:\n",
+    "    print(\"{}*{}={}\".format(num,x,num*x))\n",
+    "    x=x+1\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "41bc822d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter a number: 11234567\n",
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "#4.Write a program to count the total number of digits in a number using a while loop.\n",
+    "\n",
+    "\n",
+    "x=0\n",
+    "num=input(\"enter a number: \")\n",
+    "while x>=0:\n",
+    "    print(len(num))\n",
+    "    break\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "02dd1bb2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter guess number:4\n",
+      "enter guess number:5\n",
+      "enter guess number:12\n",
+      "well guess\n"
+     ]
+    }
+   ],
+   "source": [
+    "#5. Write a python program to guess a number between 1 to\n",
+    "\n",
+    "\n",
+    "while True:\n",
+    "    guess=int(input(\"enter guess number:\"))\n",
+    "    if guess==12:\n",
+    "        print(\"well guess\")\n",
+    "        break\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "90b98e43",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "15\n",
+      "1\n",
+      "2\n",
+      "buzz\n",
+      "4\n",
+      "buzz\n",
+      "buzz\n",
+      "7\n",
+      "8\n",
+      "buzz\n",
+      "buzz\n",
+      "11\n",
+      "buzz\n",
+      "13\n",
+      "14\n"
+     ]
+    }
+   ],
+   "source": [
+    "#6. Write a python program which iterates the integers from 1 to 60.for multiples of three pint\"Fizz\" \n",
+    "#insted of the number and multiples of five \"Buzz\".for numbers which are multiple of both 3 and 5 print\"FizzBuzz\"\n",
+    "\n",
+    "\n",
+    "number=int(input())\n",
+    "\n",
+    "for i in range(1,number):\n",
+    "    if i%3==0 and i%5==0:\n",
+    "        print(\"fizzbuzz\")\n",
+    "    elif i%5==0:\n",
+    "        print(\"buzz\")\n",
+    "    elif i%3==0 :\n",
+    "        print(\"buzz\")\n",
+    "    else:\n",
+    "        print(i)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "9b55fb05",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "asdfghjkl\n",
+      "['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l']\n",
+      "9\n",
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#7.Write a program that accepts a string and chalculate the number of digits and letters\n",
+    "\n",
+    "\n",
+    "string=input()\n",
+    "r=[]\n",
+    "for i in range(len(string)):\n",
+    "    r.append(string[i])\n",
+    "print(r)\n",
+    "countalpha,countdigit=0,0\n",
+    "for i in range(len(r)):\n",
+    "    if(r[i].isalpha()):\n",
+    "        countalpha+=1\n",
+    "    elif(r[i].isdigit()):\n",
+    "        countdigit+=1\n",
+    "print(countalpha)\n",
+    "print(countdigit)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "7de8007b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "wertyuio\n",
+      "password is invalid\n"
+     ]
+    }
+   ],
+   "source": [
+    "#8. write a python program to check the validity of password input by users.\n",
+    "\n",
+    "\n",
+    "\n",
+    "password=input()\n",
+    "small=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']\n",
+    "capitals=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']\n",
+    "numbers=['0','1','2','3','4','5','6','7','8','9']\n",
+    "symbols=['#','$','@']\n",
+    "count,count1,count2,count3=0,0,0,0\n",
+    "if(6<=len(password)<=16):\n",
+    "    r=[]\n",
+    "    for i in range(len(password)):\n",
+    "        r.append(password[i])\n",
+    "    for i in range(len(r)):\n",
+    "        if(r[i] in small):\n",
+    "            count+=1\n",
+    "    if(count>0):\n",
+    "        for i in range(len(r)):\n",
+    "            if(r[i] in capitals):\n",
+    "                count1+=1\n",
+    "    if(count1>0):\n",
+    "        for i in range(len(r)):\n",
+    "            if(r[i] in numbers):\n",
+    "                count2+=1\n",
+    "    if(count2>0):\n",
+    "        for i in range(len(r)):\n",
+    "            if(r[i] in symbols):\n",
+    "                count3+=1\n",
+    "                print(\"password is valid\")\n",
+    "    else:\n",
+    "        print(\"password is invalid\")\n",
+    "else:\n",
+    "    print(\"password is invalid\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "d8c932c5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "qwertyu\n",
+      "the reversed stirng is: uytrewq\n"
+     ]
+    }
+   ],
+   "source": [
+    "#9. Write a program in Python to reverse a word by using while\n",
+    "\n",
+    "\n",
+    "    \n",
+    "string=input()\n",
+    "reverse=''\n",
+    "index=len(string)-1\n",
+    "while(index>=0):\n",
+    "    reverse+=string[index]\n",
+    "    index-=1\n",
+    "print(\"the reversed stirng is:\",reverse)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "219d168d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "256\n",
+      "the sum of the given numbers is 256\n",
+      "the avg of the given numbers is 256.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#10. Write a program which takes 10 integers as input using loop and print their average value on the screen\n",
+    "\n",
+    "s=input()\n",
+    "string1=s.split(\" \")\n",
+    "c=0\n",
+    "for i in string1:\n",
+    "    c=c+int(i)\n",
+    "print(\"the sum of the given numbers is\",c)\n",
+    "print(\"the avg of the given numbers is\",c/len(string1))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "88ae60ca",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "45\n",
+      "67\n",
+      "q\n",
+      "the product is: 3015\n",
+      "the average is: 56.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#11. Write a program which takes integer inputs from user until he/she presses “q” (Ask to press q to quit after every integer \n",
+    "#input). Print average and product of all numbers.\n",
+    "\n",
+    "\n",
+    "r,sum,pro=[],0,1\n",
+    "while True:\n",
+    "    s=input()\n",
+    "    r.append(s)\n",
+    "    if(s!=\"q\"):\n",
+    "        sum+=int(s)\n",
+    "        pro*=int(s)\n",
+    "    else:\n",
+    "        break\n",
+    "print(\"the product is:\",pro)\n",
+    "print(\"the average is:\",sum/(len(r)-1))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "badad478",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "fghjk\n",
+      "f g h j k "
+     ]
+    }
+   ],
+   "source": [
+    "#12. Write a Python program which will remove all digits or any other characters from the string except alphabets\n",
+    "\n",
+    "\n",
+    "string=input()\n",
+    "r=[]\n",
+    "for i in range(len(string)):\n",
+    "    r.append(string[i])\n",
+    "    \n",
+    "for i in range(len(r)):\n",
+    "    if(r[i].isalpha()):\n",
+    "        print(r[i],end=\" \")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "8520c771",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter number:6\n",
+      "12\n"
+     ]
+    }
+   ],
+   "source": [
+    "#13. Write a python program to find the sum of all even numbers from 0 to 10\n",
+    "\n",
+    "        \n",
+    "        \n",
+    "num=int(input(\"enter number:\"))\n",
+    "x=0\n",
+    "sum1=0\n",
+    "while x<=num:\n",
+    "    if x%2==0:\n",
+    "        sum1=sum1+x\n",
+    "        x=x+2\n",
+    "print(sum1)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "0e1e4220",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "67\n",
+      "67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 "
+     ]
+    }
+   ],
+   "source": [
+    "#14. Write a python program which will accept a digit and print All the numbers before it till 0\n",
+    "\n",
+    "num=int(input())\n",
+    "x=0\n",
+    "while x<=num:\n",
+    "    print(num,end=\" \")\n",
+    "    num=num-1\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "65af8b5c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter first number: 1\n",
+      "enter symbol: *\n",
+      "enter second number: 2\n",
+      "multiplication of two numbers are  1 * 2 = 2\n",
+      "quit the caliculater with qq\n"
+     ]
+    }
+   ],
+   "source": [
+    "#15. Create a dynamic calculator which will run continually till you press “c\"\n",
+    "\n",
+    "\n",
+    "quit=1\n",
+    "while quit==1:\n",
+    "    num1=int(input(\"enter first number: \"))\n",
+    "    sym=input(\"enter symbol: \")\n",
+    "    num2=int(input(\"enter second number: \"))\n",
+    "    if (sym=='+'):\n",
+    "        print(\"addition of two numbers are  {} + {} = {}\".format(num1,num2,num1+num2))\n",
+    "        s=input(\"quit the caliculater with q\")\n",
+    "        if(s=='q'):\n",
+    "            break\n",
+    "        else:\n",
+    "            continue\n",
+    "    elif sym=='-':\n",
+    "        print(\"subtraction of two numbers are  {} - {} = {}\".format(num1,num2,num1-num2))\n",
+    "        s=input(\"quit the caliculater with q\")\n",
+    "        if(s=='q'):\n",
+    "            break\n",
+    "        else:\n",
+    "            continue\n",
+    "    elif sym=='*':\n",
+    "        print(\"multiplication of two numbers are  {} * {} = {}\".format(num1,num2,num1*num2))\n",
+    "        s=input(\"quit the caliculater with q\")\n",
+    "        if(s=='q'):\n",
+    "                break\n",
+    "        else:\n",
+    "                continue\n",
+    "    elif sym=='/':\n",
+    "        print(\"division of two numbers are  {} / {} = {}\".format(num1,num2,num1/num2))\n",
+    "        s=input(\"quit the caliculater with q\")\n",
+    "        if(s=='q'):\n",
+    "            break\n",
+    "        else:\n",
+    "            continue\n",
+    "    elif (sym=='**'):\n",
+    "        print(\"power of two numbers are  {} ** {} = {}\".format(num1,num2,num1**num2))\n",
+    "        s=input(\"quit the caliculater with q\")\n",
+    "        if(s=='q'):\n",
+    "            break\n",
+    "        else:\n",
+    "            continue\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d5ca14b4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c0d18dec",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "247c763a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
